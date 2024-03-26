@@ -1,26 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="p-6">
+    <p class="text-4xl font-semibold text-primary">Restaurantes:</p>
+    <RestaurantTable />
+    <p class="text-4xl font-semibold text-primary">Bliblablublu:</p>
+    <PostContainer />
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import PostContainer from './components/PostContainer.vue';
+import RestaurantTable from './components/RestaurantTable.vue';
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body{
+    @apply bg-white;
+  }
 </style>
