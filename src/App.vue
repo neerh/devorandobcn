@@ -10,10 +10,11 @@
 <script setup>
 import PostContainer from './components/PostContainer.vue';
 import RestaurantTable from './components/RestaurantTable.vue';
+
 </script>
 
 <style>
-  body{
-    @apply bg-white;
-  }
+body {
+  @apply bg-[#D9D9D9];
+}
 </style>
